@@ -1,6 +1,7 @@
 from train import train_model
 
 path="Train"
-train_model(path)
+epo=50
+train_model(path,epo)
 
 print("Training completed")
