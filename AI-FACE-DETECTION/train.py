@@ -61,7 +61,7 @@ def train_model(path,epo):
         print(f"Epoch[{epochs+1}/{epoch}],loss:{epoch_loss},Accuracy:{accuracy}")
         #print("Training completed")
 
-        torch.save(model.state_dict(), "/content/drive/MyDrive/Soul vision ai trained data/family_cnn.pth")
-        torch.save(idx_to_class, "/content/drive/MyDrive/Soul vision ai trained data/idx_to_class.pth")
+        torch.save(model.state_dict(), "family_cnn.pth")
+        torch.save(idx_to_class, "idx_to_class.pth")
 
     print("Training completed")
