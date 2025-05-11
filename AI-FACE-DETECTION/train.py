@@ -19,7 +19,7 @@ def train_model(path,epo):
                          std=[0.229, 0.224, 0.225])
 ])
 
-    dataset=datasets.ImageFolder(path,transform=transform)
+    dataset=datasets.ImageFolder(path,transforms=transform)
     loader=DataLoader(dataset,batch_size=8,shuffle=True)
 
     #img,label=dataset[0]
