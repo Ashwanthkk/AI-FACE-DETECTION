@@ -17,7 +17,7 @@ AI Face Detection is a deep learning project that uses a **Convolutional Neural 
 
 - **`training the model.py`**  
   🏋️ Trains the CNN model using labeled images. After training, it generates:
-  - ✅ `weights` file (model parameters)
+  - ✅ `weights(Familycnn)` file (model parameters)
   - ✅ `idx_to_class` file (label-to-name mapping)
 
 - **`predict the face.py`**  
@@ -30,7 +30,7 @@ AI Face Detection is a deep learning project that uses a **Convolutional Neural 
 
 ## ⚠️ Notes
 
-- The `weights` and `idx_to_class` files are **not provided** in this repo.
+- The `weights(Familycnn)` and `idx_to_class` files are **not provided** in this repo.
 - These files are **automatically created** after completing training using `training the model.py`.
 
 ---
