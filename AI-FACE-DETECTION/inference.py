@@ -38,9 +38,9 @@ def predict_face(imag,idx,weight):
 
 
     model.eval() #sets CNN for prediction
-    with torch.no_grad(): #gradient descent calculation  will now be False
+    with torch.no_grad(): 
         output = model(tensor)
-        _, predicted = torch.max(output, 1) #predicts the high probabilty face
+        _, predicted = torch.max(output, 1) 
         result = idx_to_class[predicted.item()]
         print(f"[INFO] Prediction index: {predicted.item()}, Label: {result}")
         return result
