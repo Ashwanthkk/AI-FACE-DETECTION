@@ -20,7 +20,7 @@ print(detect_face)
 print(detect_face.shape)
 
 idx="idx_to_class.pth"
-weight="/content/idx_to_class (3).pth"
+weight="idx_to_class .pth"
 
 for x,y,w,h in detect_face:
    cv.rectangle(face_read,(x,y),(x+w,y+h),(0,255,0),4)
