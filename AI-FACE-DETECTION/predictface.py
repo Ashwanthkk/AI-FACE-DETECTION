@@ -67,6 +67,7 @@ while True:
       
       #Draw rectangle over the face
       cv.rectangle(frame,(startx,starty),(endx,endy),(0,255,0),2)
+      cv.putText(frame, result_name, (startx, starty - 10), cv.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
 
   output.write(frame)
 
