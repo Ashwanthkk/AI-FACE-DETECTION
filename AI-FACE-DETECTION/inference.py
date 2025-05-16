@@ -29,7 +29,7 @@ def predict_face(imag,idx,weight):
     model.load_state_dict(torch.load(weights, map_location=torch.device("cpu")))
 
 
-    tensor = transform(imag).unsqueeze(0) #sets correct metrice order for CNN
+    tensor = transform(imag).unsqueeze(0) #sets correct matrix order for CNN
 
   
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
